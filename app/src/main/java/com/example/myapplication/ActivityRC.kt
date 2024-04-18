@@ -11,6 +11,7 @@ class ActivityRC : AppCompatActivity() {
     private lateinit var imageAvatar: ImageView
     private lateinit var buttonGuessTheAnimal: Button
     private lateinit var buttonListening: Button
+    private lateinit var buttonWordPractice: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rc)
@@ -18,6 +19,7 @@ class ActivityRC : AppCompatActivity() {
         imageAvatar = findViewById(R.id.imageAvatar)
         buttonGuessTheAnimal = findViewById(R.id.buttonGuessTheAnimal)
         buttonListening = findViewById(R.id.buttonListening)
+        buttonWordPractice = findViewById(R.id.buttonWordPractice)
 
         imageAvatar.setOnClickListener{
             val intent = Intent(this@ActivityRC, Profile::class.java)
@@ -34,5 +36,11 @@ class ActivityRC : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        buttonWordPractice.setOnClickListener{
+            val intent = Intent(this@ActivityRC, WordPractice::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 }

@@ -9,4 +9,5 @@
     <color name="my_dark_background">#02022E</color>
     <color name="button_blue">#5B7BFE</color>
     <color name="text_color">#FF000000</color>
+    <color name="gray">#E5E5E5</color>
 </resources>
