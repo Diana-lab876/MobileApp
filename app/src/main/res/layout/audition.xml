@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/my_light_background">
+
+    <!-- Верхняя панель с заголовком и кнопкой назад -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#410FA3"
+        android:paddingStart="24dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#410FA3"
+                android:src="@drawable/back_button" />
+
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="24dp"
+                android:gravity="start"
+                android:paddingRight="64dp"
+                android:text="@string/listening"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Блок с контентом -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="@color/my_light_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="34dp"
+            android:gravity="center"
+            android:text="cucumber"
+            android:textColor="@color/text_color"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/trans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="[ 'kju:kʌmbə ]"
+            android:textColor="@color/text_color"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textpress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginHorizontal="24dp"
+            android:gravity="start"
+            android:text="@string/please_press_button_and_say_this_n_word_our_service_will_check_n_your_pronunciation"
+            android:textColor="@color/text_color"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:id="@+id/third_after"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/microtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginHorizontal="24dp"
+                android:text="@string/your_result"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/animalText"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="24dp"
+                android:background="@drawable/rounded_button_background"
+                android:backgroundTint="#080E1E0D"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingStart="12dp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/check_speech_btn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/rounded_button_background"
+            android:backgroundTint="@color/button_blue"
+            android:gravity="center"
+            android:text="@string/check_my_speech"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/rounded_button_background"
+            android:backgroundTint="@color/button_blue"
+            android:gravity="center"
+            android:text="@string/yay_go_next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- Нижняя панель с кнопкой микрофона -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:backgroundTint="@color/my_light_background">
+
+        <ImageButton
+            android:id="@+id/micro"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/micro"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<!-- В файле для светлой темы -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Установка цвета фона для светлой темы -->
+        <item name="android:windowBackground">@color/my_light_background</item>
+        <!-- Другие настройки для светлой темы -->
+    </style>
+
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+</resources>
